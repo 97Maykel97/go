@@ -4,39 +4,71 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="img/icon.svg" />
+		<link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+
 		<title>Document</title>
 	</head>
 	<body>
-		<img src="img/logo.svg" alt="logo" class="logo" />
-		<section>
-			<h1>Меню</h1>
-			<ul>
-				<li><a href="#halls">Залы</a></li>
-				<li><a href="#aboutUs">О нас</a></li>
-				<li><a href="#">Бронь</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#contacts">Контакты</a></li>
-			</ul>
-		</section>
+		<header>
+			<img src="img/logo.svg" alt="logo" class="logo" />
+			<nav>
+				<p>Меню</p>
+				<ul>
+					<li><a href="#halls">Залы</a></li>
+					<li><a href="#aboutUs">О нас</a></li>
+					<li><a href="#">Бронь</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<section>
-			<h2>У нас есть всё для классного отдыха с друзьями!</h2>
+			<h1>У нас есть всё для классного отдыха с друзьями!</h1>
 			<ul>
 				<li>
-					<img src="img/vr.jpg" alt="VR очки" height="228px" />
-					<br />
-					VR очки
+					<figure>
+						<img src="img/vr.jpg" alt="VR очки" height="228px" />
+						<figcaption>VR очки</figcaption>
+					</figure>
 				</li>
 				<li>
-					<img src="img/audio.jpg" alt="Аудио-система" height="228px" />
-					<br />
-					Аудио-система 5.1 с отличным звуком
+					<figure>
+						<img src="img/audio.jpg" alt="Аудио-система" height="228px" />
+
+						<figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+					</figure>
 				</li>
-				<li>Караоке (4 микрофона)</li>
-				<li>Настольные игры</li>
-				<li>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</li>
-				<li>PlayStation 5</li>
+				<li>
+					<figure>
+						<img src="img/micro.jpg" alt="микрофон" height="228px" />
+						<figcaption>Караоке (4 микрофона)</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img
+							src="img/game.jpg"
+							alt="игры
+						"
+							height="228px"
+						/>
+						<figcaption>Настольные игры</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/Netflix.jpg" alt="Netflix" height="228px" />
+
+						<figcaption>
+							Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
+						</figcaption>
+					</figure>
+				</li>
+				<figure>
+					<img src="img/sony.jpg" alt="sony" height="228px" />
+					<figcaption><li>PlayStation 5</li></figcaption>
+				</figure>
 			</ul>
 		</section>
 
@@ -69,17 +101,21 @@
 				</p>
 			</blockquote>
 		</section>
-		<section>
-			<h2 id="contacts">Контакты</h2>
-			<p>г. Москва ул. Аквамарина, 16</p>
-			<a href="tell:89509302893">8(950)930-28-93</a>
-			<br />
-			<br />
-			<a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-			<ul>
-				<li><a href="#">Vkontakte</a></li>
-				<li><a href="#">Telegram</a></li>
-			</ul>
-		</section>
+		<footer>
+			<address>
+				<h2 id="contacts">Контакты</h2>
+				<p>г. Москва ул. Аквамарина, 16</p>
+				<p><a href="tell:89509302893">8(950)930-28-93</a></p>
+				<a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+			</address>
+			<nav>
+				<ul>
+					<li><a href="https://vk.com/" target="_blank">Vkontakte</a></li>
+					<li>
+						<a href="https://web.telegram.org/" target="_blank">Telegram</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>
