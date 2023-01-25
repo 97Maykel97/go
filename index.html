@@ -72,18 +72,13 @@
 					</li>
 					<li>
 						<figure>
-							<img
-								src="img/game.jpg"
-								alt="игры
-						"
-								height="228px"
-							/>
+							<img src="img/game.jpg" alt="игры" height="228px" />
 							<figcaption>Настольные игры</figcaption>
 						</figure>
 					</li>
 					<li>
 						<figure>
-							<img src="img/Netflix.jpg" alt="Netflix" height="228px" />
+							<img src="img/netflix.jpg" alt="Netflix" height="228px" />
 
 							<figcaption>
 								Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
@@ -108,6 +103,133 @@
 					<li>Wild west</li>
 					<li>Neon style</li>
 				</ol>
+			</section>
+
+			<section>
+				<h2>Забронировать</h2>
+				<form method="post" action="https://jsonplaceholder.typicode.com/posts">
+					<fieldset>
+						<label
+							><input type="radio" name="hall" value="80's vibes" />80's
+							vibes</label
+						>
+						<label
+							><input type="radio" name="hall" value="Star Wars" />Star
+							Wars</label
+						>
+						<label
+							><input type="radio" name="hall" value="Wild west" />Wild
+							west</label
+						>
+						<label
+							><input type="radio" name="hall" value="Neon style" />Neon
+							style</label
+						>
+					</fieldset>
+					<fieldset>
+						<legend>Собери набор развличений</legend>
+						<fieldset>
+							<legend>Приставка:</legend>
+							<label
+								><input
+									type="radio"
+									name="Game console"
+									value="PlayStation"
+								/>PlayStation
+							</label>
+							<label
+								><input
+									type="radio"
+									name="Game console"
+									value="Sega Mega
+								Drive"
+								/>Sega Mega Drive
+							</label>
+							<label>
+								<input
+									type="radio"
+									name="Game console"
+									value="X-Box One S"
+								/>X-Box One S
+							</label>
+							<label
+								><input type="radio" name="Game console" value="Dendy" />Dendy
+							</label>
+						</fieldset>
+						<fieldset>
+							<legend>Настольные игры:</legend>
+							<label
+								><input type="checkbox" name="table games" value="Jengo" />Jengo
+							</label>
+							<label
+								><input
+									type="checkbox"
+									name="table games"
+									value="Monopoly"
+								/>Monopoly</label
+							>
+							<label
+								><input type="checkbox" name="table games" value="Munchkin" />
+								Манчкин
+							</label>
+							<label
+								><input
+									type="checkbox"
+									name="table games"
+									value="Alias"
+								/>Alias</label
+							>
+						</fieldset>
+						<fieldset>
+							<legend>Дополнительно:</legend>
+							<label
+								><input
+									type="checkbox"
+									name="addition"
+									value="Karaoke"
+								/>Караоке</label
+							>
+							<label
+								><input type="checkbox" name="addition" value="VR" />VR</label
+							>
+						</fieldset>
+					</fieldset>
+					<fieldset>
+						<legend>Выбери дату и время</legend>
+						<label> Дата* <input type="date" name="date" required /></label>
+						<label>Время* <input type="time" name="time" required /></label>
+						<br />
+						<label>
+							Колличество человек*
+							<input type="text" name="persons" required
+						/></label>
+						<br />
+						<label>
+							Имя*
+							<input type="text" name="name" required
+						/></label>
+						<br />
+						<label>
+							Фамилия*
+							<input type="text" name="surname" required
+						/></label>
+						<br />
+						<label>
+							Телефон*
+							<input type="text" name="number" required
+						/></label>
+						<br />
+						<label
+							><input type="checkbox" name="age" required /> Я старше 18
+							лет</label
+						>
+					</fieldset>
+					<button type="submit">Забронировать</button>
+					<label
+						><input type="checkbox" name="agree" required /> Согласие на
+						обработку данных</label
+					>
+				</form>
 			</section>
 
 			<section>
