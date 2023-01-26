@@ -117,129 +117,109 @@
 				<h2>Забронировать</h2>
 				<form method="post" action="https://jsonplaceholder.typicode.com/posts">
 					<fieldset>
-						<label
-							><input type="radio" name="hall" value="80's vibes" />80's
-							vibes</label
-						>
-						<label
-							><input type="radio" name="hall" value="Star Wars" />Star
-							Wars</label
-						>
-						<label
-							><input type="radio" name="hall" value="Wild west" />Wild
-							west</label
-						>
-						<label
-							><input type="radio" name="hall" value="Neon style" />Neon
-							style</label
-						>
+						<input type="radio" name="hall" value="80's vibes" id="Vibes80's" />
+						<label for="Vibes80's">80's vibes</label>
+						<input type="radio" name="hall" value="Star Wars" id="starWars" />
+						<label for="starWars"> Star Wars</label>
+						<input type="radio" name="hall" value="Wild west" id="wildWest" />
+						<label for="wildWest">Wild west</label>
+						<input type="radio" name="hall" value="Neon style" id="neonstyle" />
+						<label for="neonstyle">Neon style</label>
 					</fieldset>
 					<fieldset>
 						<legend>Собери набор развличений</legend>
 						<fieldset>
 							<legend>Приставка:</legend>
-							<label
-								><input
-									type="radio"
-									name="GameConsole"
-									value="Play Station"
-								/>PlayStation
-							</label>
-							<label
-								><input
-									type="radio"
-									name="GameConsole"
-									value="Sega Mega
+							<input
+								type="radio"
+								name="GameConsole"
+								value="Play Station"
+								id="playStation"
+							/>
+							<label for="playStation">PlayStation </label>
+							<input
+								type="radio"
+								name="GameConsole"
+								value="Sega Mega
 								Drive"
-								/>Sega Mega Drive
-							</label>
-							<label>
-								<input
-									type="radio"
-									name="GameConsole"
-									value="X-Box One S"
-								/>X-Box One S
-							</label>
-							<label
-								><input type="radio" name="GameConsole" value="Dendy" />Dendy
-							</label>
+								id="segaMegaDrive"
+							/>
+							<label for="segaMegaDrive">Sega Mega Drive </label>
+							<input
+								type="radio"
+								name="GameConsole"
+								value="X-Box One S"
+								id="XBoxOneS"
+							/>
+							<label for="XBoxOneS"> X-Box One S </label>
+							<input type="radio" name="GameConsole" value="Dendy" id="dendy" />
+							<label for="dendy">Dendy </label>
 						</fieldset>
 						<fieldset>
 							<legend>Настольные игры:</legend>
-							<label
-								><input type="checkbox" name="tableGames" value="Jengo" />Jengo
-							</label>
-							<label
-								><input
-									type="checkbox"
-									name="tableGames"
-									value="Monopoly"
-								/>Monopoly</label
-							>
-							<label
-								><input type="checkbox" name="tableGames" value="Munchkin" />
-								Манчкин
-							</label>
-							<label
-								><input
-									type="checkbox"
-									name="tableGames"
-									value="Alias"
-								/>Alias</label
-							>
+							<input
+								type="checkbox"
+								name="tableGames"
+								value="Jengo"
+								id="jengo"
+							/>
+							<label for="jengo">Jengo </label>
+							<input
+								type="checkbox"
+								name="tableGames"
+								value="Monopoly"
+								id="monopoly"
+							/>
+							<label for="monopoly">Monopoly</label>
+							<input
+								type="checkbox"
+								name="tableGames"
+								value="Munchkin"
+								id="munchkin"
+							/>
+							<label for="munchkin"> Манчкин </label>
+							<input
+								type="checkbox"
+								name="tableGames"
+								value="Alias"
+								id="alias"
+							/>
+							<label for="alias">Alias</label>
 						</fieldset>
 						<fieldset>
 							<legend>Дополнительно:</legend>
-							<label
-								><input
-									type="checkbox"
-									name="addition"
-									value="Karaoke"
-								/>Караоке</label
-							>
-							<label
-								><input type="checkbox" name="addition" value="VR" />VR</label
-							>
+							<input
+								type="checkbox"
+								name="addition"
+								value="Karaoke"
+								id="karaoke"
+							/>
+							<label for="karaoke">Караоке</label>
+							<input type="checkbox" name="addition" value="VR" id="vr" />
+							<label for="vr">VR</label>
 						</fieldset>
 					</fieldset>
 					<fieldset>
 						<legend>Выбери дату и время</legend>
-						<label>
-							Дата*
-							<input type="date" name="date" required
-						/></label>
-						<label>Время* <input type="time" name="time" required /></label>
+						<label for="date"> Дата* </label>
+						<input type="date" name="date" required id="date" />
+						<label for="time">Время* </label>
+						<input type="time" name="time" required id="time" />
+						<label for="persons"> Колличество человек* </label>
+						<input type="text" name="persons" required id="persons" />
+						<label for="name"> Имя* </label>
+						<input type="text" name="name" required id="name" />
+						<label for="surname"> Фамилия* </label>
+						<input type="text" name="surname" required id="surname" />
+						<label for="number"> Телефон* </label>
+						<input type="text" name="number" required id="number" />
 						<br />
-						<label>
-							Колличество человек*
-							<input type="text" name="persons" required
-						/></label>
-						<br />
-						<label>
-							Имя*
-							<input type="text" name="userName" required
-						/></label>
-						<br />
-						<label>
-							Фамилия*
-							<input type="text" name="surname" required
-						/></label>
-						<br />
-						<label>
-							Телефон*
-							<input type="text" name="number" required
-						/></label>
-						<br />
-						<label
-							><input type="checkbox" name="age" required /> Я старше 18
-							лет</label
-						>
+						<input type="checkbox" name="age" required id="age" />
+						<label for="age"> Я старше 18 лет</label>
 					</fieldset>
 					<button type="submit">Забронировать</button>
-					<label
-						><input type="checkbox" name="agree" required /> Согласие на
-						обработку данных</label
-					>
+					<input type="checkbox" name="agree" required id="agree" />
+					<label for="agree"> Согласие на обработку данных</label>
 				</form>
 			</section>
 
