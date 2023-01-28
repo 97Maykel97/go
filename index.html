@@ -29,7 +29,6 @@
 		/>
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
-
 		<title>Document</title>
 	</head>
 	<body>
@@ -44,7 +43,7 @@
 					<li>
 						<a href="#aboutUs">О нас</a>
 					</li>
-					<li><a href="#">Бронь</a></li>
+					<li><a href="#reservation">Бронь</a></li>
 					<li>
 						<a href="#">Отзывы</a>
 					</li>
@@ -102,9 +101,8 @@
 				</ul>
 			</section>
 
-			<section>
-				<h2 id="halls">Наши залы</h2>
-
+			<section id="halls">
+				<h2>Наши залы</h2>
 				<ol>
 					<li>80's vibes</li>
 					<li>Star Wars</li>
@@ -112,24 +110,34 @@
 					<li>Neon style</li>
 				</ol>
 			</section>
+			<section id="reservation">
+				<h2>ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
 
-			<section>
-				<h2>Забронировать</h2>
 				<form method="post" action="https://jsonplaceholder.typicode.com/posts">
-					<fieldset>
-						<input type="radio" name="hall" value="80's vibes" id="vibes80's" />
-						<label for="vibes80's"> 80's vibes </label>
-						<input type="radio" name="hall" value="Star Wars" id="starWars" />
-						<label for="starWars"> Star Wars</label>
-						<input type="radio" name="hall" value="Wild west" id="wildWest" />
-						<label for="wildWest"> Wild west</label>
-						<input type="radio" name="hall" value="Neon style" id="neonStyle" />
-						<label for="neonStyle"> Neon style</label>
-					</fieldset>
-					<fieldset>
-						<legend>Собери набор развличений</legend>
-						<fieldset>
-							<legend>Приставка:</legend>
+					<p>Выбери зал</p>
+					<div>
+						<button
+							type="radio"
+							name="vibes80's"
+							value="80's vibes"
+							id="vibes80's"
+						>
+							80'S VIBES
+						</button>
+						<button type="radio" name="starWars" value="Star Wars">
+							STAR WARS
+						</button>
+						<button type="radio" name="wildWest" value="Wild west">
+							Wild west
+						</button>
+						<button type="radio" name="hall" value="Neon style" id="neonStyle">
+							Neon style
+						</button>
+					</div>
+					<p>Собири набор развличений</p>
+					<div>
+						<div>
+							<p>Приставка:</p>
 
 							<label>
 								<input type="radio" name="GameConsole" value="Play Station" />
@@ -154,9 +162,9 @@
 							<label>
 								<input type="radio" name="GameConsole" value="Dendy" /> Dendy
 							</label>
-						</fieldset>
-						<fieldset>
-							<legend>Настольные игры:</legend>
+						</div>
+						<div>
+							<p>Настольные игры:</p>
 
 							<label>
 								<input type="checkbox" name="tableGames" value="Jengo" />
@@ -180,41 +188,51 @@
 								<input type="checkbox" name="tableGames" value="Alias" />
 								Alias</label
 							>
-						</fieldset>
-						<fieldset>
-							<legend>Дополнительно:</legend>
-							<input
-								type="checkbox"
-								name="addition"
-								value="Karaoke"
-								id="karaoke"
-							/>
-							<label for="karaoke"> Караоке</label>
-							<input type="checkbox" name="addition" value="VR" id="vr" />
-							<label for="vr"> VR </label>
-						</fieldset>
-					</fieldset>
-					<fieldset>
-						<legend>Выбери дату и время</legend>
-						<label for="date"> Дата* </label>
-						<input type="date" name="date" required id="date" />
-						<label for="time">Время* </label>
-						<input type="time" name="time" required id="time" />
-						<label for="persons"> Колличество человек* </label>
-						<input type="text" name="persons" required id="persons" />
-						<label for="name"> Имя* </label>
-						<input type="text" name="name" required id="name" />
-						<label for="surname"> Фамилия* </label>
-						<input type="text" name="surname" required id="surname" />
-						<label for="number"> Телефон* </label>
-						<input type="text" name="number" required id="number" />
-						<br />
-						<input type="checkbox" name="age" required id="age" />
-						<label for="age"> Я старше 18 лет</label>
-					</fieldset>
-					<button type="submit">Забронировать</button>
-					<input type="checkbox" name="agree" required id="agree" />
-					<label for="agree"> Согласие на обработку данных</label>
+						</div>
+						<div>
+							<p>Дополнительно:</p>
+
+							<label>
+								<input type="checkbox" name="addition" value="Karaoke" />
+								Караоке</label
+							>
+
+							<label>
+								<input type="checkbox" name="addition" value="VR" />
+								VR
+							</label>
+						</div>
+					</div>
+					<p>Выбери дату и время</p>
+					<div>
+						<div>
+							<div>
+								<select name="time" required>
+									<option value="time">Время</option>
+								</select>
+
+								<select name="data" required id="time">
+									<option>Дата</option>
+								</select>
+							</div>
+							<select name="persons" required>
+								<option value="persons">Сколько человек</option>
+							</select>
+						</div>
+						<div>
+							<label for="name"> Имя </label>
+							<input type="text" name="name" required id="name" />
+							<label for="surname"> Фамилия </label>
+							<input type="text" name="surname" required id="surname" />
+						</div>
+						<div>
+							<label for="number"> Телефон </label>
+							<input type="text" name="number" required id="number" />
+							<label for="email"> E-mail </label>
+							<input type="text" name="email" required id="email" />
+							<button type="submit">Забронировать</button>
+						</div>
+					</div>
 				</form>
 			</section>
 
