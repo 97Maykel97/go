@@ -30,7 +30,7 @@
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 
-		<!-- <link rel="stylesheet" href="index.css" /> -->
+		<link rel="stylesheet" href="index.css" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -49,7 +49,7 @@
 						<a href="#bookAHall">Бронь</a>
 					</li>
 					<li>
-						<a href="#">Отзывы</a>
+						<a href="#reviews">Отзывы</a>
 					</li>
 					<li>
 						<a href="#contacts">Контакты</a>
@@ -121,7 +121,7 @@
 				<form method="post" action="https://jsonplaceholder.typicode.com/posts">
 					<fieldset>
 						<legend>Выбери Зал</legend>
-						<div class="chooseAHall">
+						<div id="chooseAHall">
 							<input
 								class="radio"
 								type="radio"
@@ -129,7 +129,7 @@
 								value="80's vibes"
 								id="vibes80's"
 							/>
-							<label id="chooseAHall" for="vibes80's"> 80's vibes </label>
+							<label class="chooseAHall" for="vibes80's"> 80's vibes </label>
 							<input
 								class="radio"
 								type="radio"
@@ -137,7 +137,7 @@
 								value="Star Wars"
 								id="starWars"
 							/>
-							<label id="chooseAHall" for="starWars"> Star Wars</label>
+							<label class="chooseAHall" for="starWars"> Star Wars</label>
 							<input
 								class="radio"
 								type="radio"
@@ -145,7 +145,7 @@
 								value="Wild west"
 								id="wildWest"
 							/>
-							<label id="chooseAHall" for="wildWest"> Wild west</label>
+							<label class="chooseAHall" for="wildWest"> Wild west</label>
 							<input
 								class="radio"
 								type="radio"
@@ -153,7 +153,7 @@
 								value="Neon style"
 								id="neonStyle"
 							/>
-							<label id="chooseAHall" for="neonStyle"> Neon style</label>
+							<label class="chooseAHall" for="neonStyle"> Neon style</label>
 						</div>
 					</fieldset>
 
@@ -238,13 +238,7 @@
 									>
 
 									<label for="vr">
-										<input
-											type="checkbox"
-											name="addition"
-											value="VR"
-											id="vr"
-											VR
-										/>
+										<input type="checkbox" name="addition" value="VR" id="vr" />
 										VR</label
 									>
 								</div>
@@ -327,6 +321,55 @@
 						<cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
 					</p>
 				</blockquote>
+			</section>
+
+			<section id="reviews">
+				<div>
+					<h2>ОТЗЫВЫ ПОСИТИТЕЛЕЙ</h2>
+					<nav>
+						<ul>
+							<li>
+								<figure>
+									<div>
+										<img src="#" alt="Макс Самойнов" />
+									</div>
+									<figcaption>Макс Самойнов</figcaption>
+								</figure>
+								<p>
+									Отмечали здесь день рождения с компанией друзей, все было
+									круто! VR очки это просто бомба, никогда еще я не был в таком
+									полном игровом погружении. Сервис на высоте!
+								</p>
+							</li>
+							<li>
+								<figure>
+									<div>
+										<img src="#" alt="Оксана Григорьева" />
+									</div>
+									<figcaption>Оксана Григорьева</figcaption>
+								</figure>
+								<p>
+									Были в комнате Дикий Запад, пели в караоке под Шакиру,
+									отличный получился корпоратив! У нас в городе больше нет
+									подобных заведений
+								</p>
+							</li>
+							<li>
+								<figure>
+									<div>
+										<img src="#" alt="Никита Ященко" />
+									</div>
+									<figcaption>Никита Ященко</figcaption>
+								</figure>
+								<p>
+									Немного подвисала игра в VR очках, а так все норм. Крутое
+									оформление комнаты в стиле звездных войн , попал в атмосферу
+									космоса
+								</p>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</section>
 		</main>
 		<footer>

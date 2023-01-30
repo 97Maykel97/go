@@ -21,13 +21,13 @@ legend {
 
 /* Начало стилизации div chooseAHall */
 
-.chooseAHall {
+#chooseAHall {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
-#chooseAHall {
+.chooseAHall {
 	background-color: #fff;
 	font-weight: bold;
 	color: #000;
