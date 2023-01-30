@@ -30,6 +30,7 @@
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 
+		<link rel="stylesheet" href="index.css" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -44,7 +45,9 @@
 					<li>
 						<a href="#aboutUs">О нас</a>
 					</li>
-					<li><a href="#">Бронь</a></li>
+					<li>
+						<a href="#bookAHall">Бронь</a>
+					</li>
 					<li>
 						<a href="#">Отзывы</a>
 					</li>
@@ -102,8 +105,8 @@
 				</ul>
 			</section>
 
-			<section>
-				<h2 id="halls">Наши залы</h2>
+			<section id="halls">
+				<h2>Наши залы</h2>
 
 				<ol>
 					<li>80's vibes</li>
@@ -113,108 +116,197 @@
 				</ol>
 			</section>
 
-			<section>
-				<h2>Забронировать</h2>
+			<section id="bookAHall">
+				<h2 class="easyBooking">ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
 				<form method="post" action="https://jsonplaceholder.typicode.com/posts">
 					<fieldset>
-						<input type="radio" name="hall" value="80's vibes" id="vibes80's" />
-						<label for="vibes80's"> 80's vibes </label>
-						<input type="radio" name="hall" value="Star Wars" id="starWars" />
-						<label for="starWars"> Star Wars</label>
-						<input type="radio" name="hall" value="Wild west" id="wildWest" />
-						<label for="wildWest"> Wild west</label>
-						<input type="radio" name="hall" value="Neon style" id="neonStyle" />
-						<label for="neonStyle"> Neon style</label>
+						<legend>Выбери Зал</legend>
+						<div class="chooseAHall">
+							<input
+								class="radio"
+								type="radio"
+								name="hall"
+								value="80's vibes"
+								id="vibes80's"
+							/>
+							<label id="chooseAHall" for="vibes80's"> 80's vibes </label>
+							<input
+								class="radio"
+								type="radio"
+								name="hall"
+								value="Star Wars"
+								id="starWars"
+							/>
+							<label id="chooseAHall" for="starWars"> Star Wars</label>
+							<input
+								class="radio"
+								type="radio"
+								name="hall"
+								value="Wild west"
+								id="wildWest"
+							/>
+							<label id="chooseAHall" for="wildWest"> Wild west</label>
+							<input
+								class="radio"
+								type="radio"
+								name="hall"
+								value="Neon style"
+								id="neonStyle"
+							/>
+							<label id="chooseAHall" for="neonStyle"> Neon style</label>
+						</div>
 					</fieldset>
+
 					<fieldset>
 						<legend>Собери набор развличений</legend>
-						<fieldset>
-							<legend>Приставка:</legend>
+						<div class="entertainmentSet">
+							<fieldset>
+								<p>Приставка:</p>
+								<div class="gameConsole">
+									<label>
+										<input
+											type="radio"
+											name="GameConsole"
+											value="Play Station"
+										/>
+										PlayStation
+									</label>
 
-							<label>
-								<input type="radio" name="GameConsole" value="Play Station" />
-								PlayStation
-							</label>
-
-							<label>
-								<input
-									type="radio"
-									name="GameConsole"
-									value="Sega Mega
+									<label>
+										<input
+											type="radio"
+											name="GameConsole"
+											value="Sega Mega
 								Drive"
-								/>
-								Sega Mega Drive
-							</label>
+										/>
+										Sega Mega Drive
+									</label>
 
-							<label>
-								<input type="radio" name="GameConsole" value="X-Box One S" />
-								X-Box One S
-							</label>
+									<label>
+										<input
+											type="radio"
+											name="GameConsole"
+											value="X-Box One S"
+										/>
+										X-Box One S
+									</label>
 
-							<label>
-								<input type="radio" name="GameConsole" value="Dendy" /> Dendy
-							</label>
-						</fieldset>
-						<fieldset>
-							<legend>Настольные игры:</legend>
+									<label>
+										<input type="radio" name="GameConsole" value="Dendy" />
+										Dendy
+									</label>
+								</div>
+							</fieldset>
+							<fieldset>
+								<p>Настольные игры:</p>
+								<div class="tableGames">
+									<label>
+										<input type="checkbox" name="tableGames" value="Jengo" />
+										Jengo
+									</label>
 
-							<label>
-								<input type="checkbox" name="tableGames" value="Jengo" />
-								Jengo
-							</label>
+									<label>
+										<input
+											type="checkbox"
+											name="tableGames"
+											value="Monopoly"
+										/>Monopoly</label
+									>
 
-							<label>
-								<input
-									type="checkbox"
-									name="tableGames"
-									value="Monopoly"
-								/>Monopoly</label
-							>
+									<label>
+										<input type="checkbox" name="tableGames" value="Munchkin" />
+										Манчкин
+									</label>
 
-							<label>
-								<input type="checkbox" name="tableGames" value="Munchkin" />
-								Манчкин
-							</label>
+									<label>
+										<input type="checkbox" name="tableGames" value="Alias" />
+										Alias</label
+									>
+								</div>
+							</fieldset>
+							<fieldset>
+								<p>Дополнительно:</p>
+								<div class="additionalChoice">
+									<label for="karaoke">
+										<input
+											type="checkbox"
+											name="addition"
+											value="Karaoke"
+											id="karaoke"
+										/>
+										Караоке</label
+									>
 
-							<label>
-								<input type="checkbox" name="tableGames" value="Alias" />
-								Alias</label
-							>
-						</fieldset>
-						<fieldset>
-							<legend>Дополнительно:</legend>
-							<input
-								type="checkbox"
-								name="addition"
-								value="Karaoke"
-								id="karaoke"
-							/>
-							<label for="karaoke"> Караоке</label>
-							<input type="checkbox" name="addition" value="VR" id="vr" />
-							<label for="vr"> VR </label>
-						</fieldset>
+									<label for="vr">
+										<input
+											type="checkbox"
+											name="addition"
+											value="VR"
+											id="vr"
+											VR
+										/>
+										VR</label
+									>
+								</div>
+							</fieldset>
+						</div>
 					</fieldset>
+
 					<fieldset>
 						<legend>Выбери дату и время</legend>
-						<label for="date"> Дата* </label>
-						<input type="date" name="date" required id="date" />
-						<label for="time">Время* </label>
-						<input type="time" name="time" required id="time" />
-						<label for="persons"> Колличество человек* </label>
-						<input type="text" name="persons" required id="persons" />
-						<label for="name"> Имя* </label>
-						<input type="text" name="name" required id="name" />
-						<label for="surname"> Фамилия* </label>
-						<input type="text" name="surname" required id="surname" />
-						<label for="number"> Телефон* </label>
-						<input type="text" name="number" required id="number" />
-						<br />
-						<input type="checkbox" name="age" required id="age" />
-						<label for="age"> Я старше 18 лет</label>
+						<div class="ChooseDateAndTime">
+							<div class="timePerson">
+								<div class="time">
+									<select name="time">
+										<option>Время</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+									</select>
+
+									<select name="data">
+										<option>Дата</option>
+										<option value="16.01.2023">16.01.2023</option>
+										<option value="17.01.2023">17.01.2023</option>
+										<option value="18.01.2023">18.01.2023</option>
+										<option value="19.01.2023">19.01.2023</option>
+										<option value="20.01.2023">20.01.2023</option>
+									</select>
+								</div>
+								<div class="persons">
+									<select name="persons">
+										<option>Сколько человек</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="person">
+								<label for="name"> Имя </label>
+								<input type="text" name="name" required id="name" />
+								<label for="surname"> Фамилия </label>
+								<input type="text" name="surname" required id="surname" />
+							</div>
+							<div class="contacts">
+								<div class="numberEmail">
+									<label for="number"> Телефон </label>
+									<input type="text" name="number" required id="number" />
+									<label for="email"> E-mail </label>
+									<input type="text" name="email" required id="email" />
+								</div>
+								<div>
+									<button type="submit">Забронировать</button>
+								</div>
+							</div>
+						</div>
 					</fieldset>
-					<button type="submit">Забронировать</button>
-					<input type="checkbox" name="agree" required id="agree" />
-					<label for="agree"> Согласие на обработку данных</label>
 				</form>
 			</section>
 
