@@ -1,4 +1,10 @@
+.faq__list {
+}
+
 .faq__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #fff;
 	color: #1c1a1a;
 	font-weight: 700;
@@ -10,4 +16,24 @@
 .faq__item:nth-child(2n + 2) {
 	background-color: #440f51;
 	color: #fff;
+}
+
+.open::after {
+	content: '';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/open.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.open-purple::after {
+	content: '';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/open-purple.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
