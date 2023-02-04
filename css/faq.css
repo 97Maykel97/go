@@ -15,22 +15,21 @@
 	color: #fff;
 }
 
-.open::after {
-	content: '';
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	background-image: url('../img/open.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.open-purple::after {
+.faq__item::after {
 	content: '';
 	display: inline-block;
 	width: 50px;
 	height: 50px;
 	background-image: url('../img/open-purple.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.faq__item:nth-child(2n + 2)::after {
+	content: '';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/open.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
