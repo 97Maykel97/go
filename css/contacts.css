@@ -1,0 +1,43 @@
+footer {
+	margin-bottom: 52px;
+}
+
+.contact-header {
+	margin-bottom: 54px;
+	font-family: 'Arial';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.contact-img {
+	margin-right: 33px;
+}
+
+.contact {
+	margin: 0;
+	font-family: 'Arial';
+	color: #fff;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.local-wrapper {
+	margin-bottom: 38px;
+}
+
+.contacts-wrapper:last-child {
+	margin-bottom: 39px;
+}
+
+.social-item {
+	display: inline-block;
+	padding-bottom: 52px;
+}
+.social {
+	margin-right: 27px;
+}
