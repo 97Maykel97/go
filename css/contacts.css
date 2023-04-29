@@ -1,8 +1,10 @@
 footer {
-	margin-bottom: 52px;
+	padding-bottom: 52px;
+	min-height: 364px;
 }
 
 .contact-header {
+	margin-top: 0;
 	margin-bottom: 54px;
 	font-family: 'Arial';
 	font-weight: 700;
@@ -34,10 +36,12 @@ footer {
 	margin-bottom: 39px;
 }
 
+.nav-list {
+	margin: 0;
+	padding: 0;
+}
+
 .social-item {
 	display: inline-block;
-	padding-bottom: 52px;
-}
-.social {
 	margin-right: 27px;
 }

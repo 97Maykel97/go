@@ -1,10 +1,12 @@
 /* start of section booking  */
 
 .booking {
-	margin-bottom: 123px;
+	height: 455px;
+	margin-bottom: 100px;
 }
 
-.booking-title {
+.booking-header {
+	margin-top: 0;
 	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 40px;

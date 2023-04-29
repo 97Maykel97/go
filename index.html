@@ -35,12 +35,10 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="logo">
-					<h1 class="header-logo">GAME OVER</h1>
-					<p class="subheader-logo">Новый формат игр и отдыха</p>
-					<img src="img/man.png" alt="man" class="img-logo" />
-				</div>
+			<div class="container container-header">
+				<h1 class="header-logo">GAME OVER</h1>
+				<p class="subheader-logo">Новый формат игр и отдыха</p>
+				<!-- <img src="img/man.png" alt="man" class="img-logo" /> -->
 			</div>
 		</header>
 
@@ -48,34 +46,22 @@
 			<section class="halls">
 				<div class="container">
 					<h2 class="halls-header">Наши залы</h2>
-
-					<div class="wrapper">
-						<img class="img" src="img/80vibes.jpg" alt="80's vibes" />
-						<p class="wrapper-p">80’s vibes</p>
+					<div class="vibes-img allImg"><p class="vibes">80’s vibes</p></div>
+					<div class="starWars-img allImg">
+						<p class="starWars">Star wars</p>
 					</div>
-					<div class="wrapper">
-						<img class="img" src="img/starwars.jpg" alt="Star Wars" />
-						<p class="wrapper-p">Star wars</p>
+					<div class="neonStyle-img allImg">
+						<p class="neonStyle">neon style</p>
 					</div>
-					<div class="wrapper">
-						<img class="img" src="img/wildwest.jpg" alt="Wild west" />
-						<p class="wrapper-p">wild west</p>
-					</div>
-					<div class="wrapper">
-						<img
-							class="img"
-							class="img-responsive"
-							src="img/neonstyle.jpg"
-							alt="Neon style"
-						/>
-						<p class="wrapper-p">neon style</p>
+					<div class="wildWest-img allImg">
+						<p class="wildWest">wild west</p>
 					</div>
 				</div>
 			</section>
 
 			<section class="booking">
 				<div class="container">
-					<h2 class="booking-title">Забронировать</h2>
+					<h2 class="booking-header">Забронировать</h2>
 					<form
 						method="post"
 						action="https://jsonplaceholder.typicode.com/posts"
@@ -197,11 +183,11 @@
 				<div class="container">
 					<h2 id="aboutUs" class="aboutUs-header">О нас</h2>
 					<div class="aboutUs-p">
-						<p>
+						<p class="aboutUs-text">
 							Для наших гостей мы создали концептуально новое игровое
 							пространство виртуальной реальности в центральной части города.
 						</p>
-						<p>
+						<p class="aboutUs-text">
 							Каждый день мы стараемся создавать для вас самую лучшую игровую
 							атмосферу и радовать Вас топовыми игровыми разработками со всего
 							мира.
@@ -209,10 +195,7 @@
 					</div>
 
 					<blockquote>
-						<div class="aboutUs-text">
-							<p class="test-p">GAME OVER —</p>
-							<p class="test-p">это место незабываемых впечатлений</p>
-						</div>
+						<p class="test-p">GAME OVER — это место незабываемых впечатлений</p>
 					</blockquote>
 
 					<div class="aboutUs-wrapper">
@@ -266,12 +249,33 @@
 							>
 						</div>
 					</address>
-					<div class="social-item">
-						<img class="social" src="icon/vk.svg" alt="" />
-						<img class="social" src="icon/tg.svg" alt="" />
-						<img class="social" src="icon/pinterest.svg" alt="" />
-						<img class="social" src="icon/stumbleupon.svg" alt="" />
-					</div>
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="social-item">
+								<a href="#">
+									<img class="social" src="icon/vk.svg" alt="VKontakte"
+								/></a>
+							</li>
+							<li class="social-item">
+								<a href="#">
+									<img class="social" src="icon/tg.svg" alt="Telegram"
+								/></a>
+							</li>
+							<li class="social-item">
+								<a href="#">
+									<img class="social" src="icon/pinterest.svg" alt="Pinterest"
+								/></a>
+							</li>
+							<li class="social-item">
+								<a href="#"></a>
+								<img
+									class="social"
+									src="icon/stumbleupon.svg"
+									alt="StumbleUpon"
+								/>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</section>
 		</footer>

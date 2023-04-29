@@ -3,15 +3,15 @@
 }
 
 body {
-	/* background-color: #1b1a1b; */
-	background-color: #000000;
+	background-color: #1b1a1b;
 	color: #fff;
 	font-family: Arial, sans-serif;
 }
 
 .container {
-	max-width: 1180px;
+	max-width: 1240px;
 	margin: 0 auto;
+	padding: 0 30px;
 }
 
 a {
@@ -20,4 +20,8 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+address {
+	font-style: normal;
 }

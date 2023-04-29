@@ -1,10 +1,11 @@
 .header {
-	margin-top: 146px;
+	padding: 146px 0 100px;
 }
 
-.logo {
+.container-header {
 	position: relative;
-	padding-bottom: 723px;
+	min-height: 823px;
+	background: url('../img/man.png') bottom -30px right 20px no-repeat;
 }
 
 .header-logo {
